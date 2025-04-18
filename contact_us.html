@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #000000b3;
+      padding: 10px 20px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }
+    .contact-section {
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+    .contact-section h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      backdrop-filter: blur(4px);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #00b894;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #019875;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <div class="contact-section">
+    <h1>CONTACT US</h1>
+    <form>
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+</body>
+</html>
